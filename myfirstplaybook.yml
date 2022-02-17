@@ -7,5 +7,5 @@
 
    - name: i want to install webser in node
      apt:
-       name: harsh
+       name: apache2
        state: present

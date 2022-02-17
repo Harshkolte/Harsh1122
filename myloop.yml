@@ -2,6 +2,9 @@
  - hosts: all 
    become: yes 
    tasks:
+     - name: i want to ping 
+       ping:
+       
      - name: i want to install multipackage
        apt:
          name: "{{ item }}"

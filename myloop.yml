@@ -1,0 +1,12 @@
+--- 
+ - hosts: mywebserver 
+   become: yes 
+   tasks:
+     - name: install multi package
+       apt:
+         name: "{{item}}"
+         state: present 
+       loops: 
+         - get 
+         - tree 
+         - wget

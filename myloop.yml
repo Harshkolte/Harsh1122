@@ -4,12 +4,12 @@
    tasks:
      - name: i want to ping 
        ping:
-       
+
      - name: i want to install multipackage
        apt:
          name: "{{ item }}"
          state: present 
-       loops: 
+       loop: 
          - get 
          - tree 
          - wget

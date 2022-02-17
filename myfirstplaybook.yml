@@ -1,0 +1,11 @@
+--- 
+- hosts: all
+  become: yes
+  tasks:
+   - name: iwant to ping
+     ping:
+
+   - name: i want to install webser in node
+     apt:
+       name: harsh
+       state: present

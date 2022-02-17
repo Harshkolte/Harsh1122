@@ -1,8 +1,8 @@
 --- 
- - hosts: mywebserver 
+ - hosts: all 
    become: yes 
    tasks:
-     - name: install multi package
+     - name: i want to install multipackage
        apt:
          name: "{{ item }}"
          state: present 
